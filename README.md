@@ -1,9 +1,12 @@
 # ArticleBrowser
+
 This is the integrated article browser for [quokecola.com](https://www.quokecola.com)
 
 To add your articles, please revise the `psglists.json`
 
 Format for psglists.json is simple.
+
+Markdown Rendering and Code Highlighting are based on [markedjs](https://marked.js.org) and [highlightjs](https://highlightjs.org), but slightly revised the code for better visual style and for iFrame hyperlink jump.
 
 ```json
 [
@@ -36,5 +39,7 @@ Each each struct have the properties including `title`, `pic`, `time`, `src`, `c
 `pic` is for the picture showed on blocks. When the article is loaded, it will also showed on the background blurry. 
 
 `time` can be the published time of your article. The latter versions may take the support of arrange by time. 
+
+`src` The path to your markdown file.
 
 `class` would be the tags for sorting, it will showed on sidebar for search.
